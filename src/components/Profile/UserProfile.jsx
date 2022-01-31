@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const UserCard=(props)=> {
+const UserCard = (props) => {
   const { userName, tag, location, avatar, stats } = props;
 
   return (
@@ -28,7 +28,7 @@ const UserCard=(props)=> {
       </ul>
     </div>
   );
-}
+};
 
 UserCard.propTypes = {
   userName: PropTypes.string,
