@@ -3,8 +3,8 @@ import StatisticsCard from "./StatisticsCard";
 
 const Statistics = () => {
   return (
-    <section class="statistics">
-      <h2 class="title">Upload stats</h2>
+    <section className="statistics">
+      <h2 className="title">Upload stats</h2>
       <ul className="stat-list">
         {data.map((el) => {
           return (
@@ -15,8 +15,7 @@ const Statistics = () => {
             />
           );
         })}
-      </ul>
-      /
+      </ul>      
     </section>
   );
 };

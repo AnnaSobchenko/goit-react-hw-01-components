@@ -34,7 +34,6 @@ UserCard.propTypes = {
   userName: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
-  avatar: PropTypes.string,
-  // stats: PropTypes.string,
+  avatar: PropTypes.string,  
 };
 export default UserCard;
