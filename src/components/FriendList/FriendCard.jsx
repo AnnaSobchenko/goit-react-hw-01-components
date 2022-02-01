@@ -1,13 +1,15 @@
 import PropTypes from "prop-types";
+import {StatusStyled} from './FriendList.styled.js'
+import s from './FriendList.module.scss'
 
 const FriendCard = (props) => {
   const { statusIsOnline, avatar, name } = props;
 
   return (
-    <li className="item">
-      <span className="status">{statusIsOnline}</span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+    <li className={s.item}>
+      <StatusStyled statusIsOnline={statusIsOnline} ></StatusStyled>
+      <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={s.name}>{name}</p>
     </li>
   );
 };
