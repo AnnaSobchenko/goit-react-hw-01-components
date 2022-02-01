@@ -1,10 +1,10 @@
 import data from "./data.json";
 import StatisticsCard from "./StatisticsCard";
 import s from './Statistics.module.scss'
-const Statistics = () => {
+const Statistics = ({title}) => {
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>Upload stats</h2>
+      {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.statList}>
         {data.map((el) => {
           return (
