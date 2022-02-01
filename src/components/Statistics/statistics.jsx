@@ -1,11 +1,11 @@
 import data from "./data.json";
 import StatisticsCard from "./StatisticsCard";
-
+import s from './Statistics.module.scss'
 const Statistics = () => {
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
-      <ul className="stat-list">
+    <section className={s.statistics}>
+      <h2 className={s.title}>Upload stats</h2>
+      <ul className={s.statList}>
         {data.map((el) => {
           return (
             <StatisticsCard
