@@ -1,9 +1,10 @@
 import TransitionHistoryItem from "./TransactionHistoryItem";
 import transactions from "./transactions.json";
+import s from './TransactionHistory.module.scss'
 
 const TransactionHistory = () => {
   return (
-    <table className="transaction-history">
+    <table className={s.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>

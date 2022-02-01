@@ -15,7 +15,7 @@ const FriendCard = (props) => {
 };
 
 FriendCard.propTypes = {
-  statusIsOnline: PropTypes.string,
+  statusIsOnline: PropTypes.bool,
   avatar: PropTypes.string,
   name: PropTypes.string,
 };
